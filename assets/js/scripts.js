@@ -58,16 +58,7 @@ $(document).ready(function(){
       $(stars[i]).addClass('selected');
     }
 
-    // JUST RESPONSE (Not needed)
-    var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
-    var msg = "";
-    if (ratingValue > 1) {
-        msg = "Thanks! You rated this " + ratingValue + " stars.";
-    }
-    else {
-        msg = "We will improve ourselves. You rated this " + ratingValue + " stars.";
-    }
-    responseMessage(msg);
+
 
   });
 
@@ -75,3 +66,29 @@ $(document).ready(function(){
 });
 
 
+
+
+  $(function(){
+    $('.share').click(function(){
+        $('.share_with').toggleClass('open')
+                    });
+});
+
+
+
+jQuery(function($){
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".share_with"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      $('.share_with').removeClass('open')
+    }
+  });
+});
+
+
+  $(function(){
+    $('.close').click(function(){
+        $('.share_with').removeClass('open')
+                    });
+});

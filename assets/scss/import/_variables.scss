@@ -1,8 +1,8 @@
 // Font Sizes
-$base-font-size: 16px;
+$base-font-size: 12px;
 $em-base: $base-font-size;
-$base-font-family: 'Roboto Condensed', sans-serif;
-$heading-font-family: $base-font-family;
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Oswald', sans-serif;
 
 // font weight
 $fubold: 900; // Extra Black, Fat, Poster or Ultra Black
@@ -33,12 +33,12 @@ $orange: orange;
 $red: red;
 $blue: #477dca;
 $gray-medium: #999;
-$gray-dark: #333;
+$gray-dark: #282828;
 $gray-light: #ddd;
 
 // Font Colors
 $base-font-color: $gray-dark;
-$action-color: $blue;
+$action-color: #2c87ce;
 
 // Border
 $base-border-color: $gray-light;
