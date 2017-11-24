@@ -12,7 +12,6 @@
   <link href="favicon.ico" rel="shortcut icon">
 
   <!-- css + javascript -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/main.css" media="all">
 
   <!--[if lt IE 9]>
@@ -112,9 +111,9 @@
 
           <div class="bottom">
             <h2>YOU MAY ALSO LIKE</h2>
-            <div class="items">
+            <div id="slides" class="items">
 
-              <a class="item" href="#">
+              <a class="item showing" href="#">
                 <div class="img_w"><img src="img/foto1.jpg" alt=""></div>
                 <div class="prices">
                   <div class="old"><span>$</span>29.50</div>
@@ -157,6 +156,13 @@
                 </div>
               </a>
             </div>
+            <div class="buttons">
+                <button class="controls" id="previous"></button>
+
+
+
+                <button class="controls" id="next"></button>
+              </div>
           </div>
 
         </article>
@@ -173,7 +179,7 @@
 
 </footer><!-- /footer -->
 
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>

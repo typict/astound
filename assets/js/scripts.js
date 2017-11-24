@@ -92,3 +92,55 @@ jQuery(function($){
         $('.share_with').removeClass('open')
                     });
 });
+
+
+
+
+
+if (window.innerWidth < 600) {
+
+var controls = document.querySelectorAll('.controls');
+for(var i=0; i<controls.length; i++){
+    controls[i].style.display = 'inline-block';
+}
+
+var slides = document.querySelectorAll('#slides .item');
+var currentSlide = 0;
+
+
+function nextSlide(){
+    goToSlide(currentSlide+1);
+}
+
+function previousSlide(){
+    goToSlide(currentSlide-1);
+}
+
+function goToSlide(n){
+    slides[currentSlide].className = 'item';
+    currentSlide = (n+slides.length)%slides.length;
+    slides[currentSlide].className = 'item showing';
+}
+
+
+var playing = true;
+
+
+
+
+var next = document.getElementById('next');
+var previous = document.getElementById('previous');
+
+next.onclick = function(){
+
+    nextSlide();
+};
+previous.onclick = function(){
+
+    previousSlide();
+};
+
+}
+
+
+
