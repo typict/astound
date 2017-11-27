@@ -225,6 +225,9 @@ input {
   &[type='checkbox'],
   &[type='radio'] {
     box-sizing: border-box;
+    -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
     padding: 0;
 
     *height: 13px;
@@ -271,6 +274,9 @@ table {
 }
 * {
   box-sizing: border-box;
+  -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
 
@@ -279,7 +285,9 @@ table {
   &:after,
   &:before {
     box-sizing: border-box;
-
+-ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }

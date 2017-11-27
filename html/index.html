@@ -14,11 +14,12 @@
   <!-- css + javascript -->
   <link rel="stylesheet" href="css/main.css" media="all">
 
-  <!--[if lt IE 9]>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+<!--[if lt IE 8]>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+
+<![endif]-->
 
 <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Oswald|Raleway" rel="stylesheet">
 </head>
@@ -179,8 +180,18 @@
 
 </footer><!-- /footer -->
 
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
+
+  <script type="text/javascript" src="js/scripts.js"></script>
+<!--[if IE 8]>
+  <style type="text/css">
+.bottom .item{
+  width: 31%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+  </style>
+  <![endif]-->
 </body>
 </html>

@@ -230,6 +230,9 @@ input[disabled] {
 
 input[type='checkbox'], input[type='radio'] {
   box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding: 0;
   *height: 13px;
   *width: 13px;
@@ -281,6 +284,9 @@ table th {
 
 * {
   box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-smoothing: antialiased;
@@ -289,6 +295,9 @@ table th {
 
 *:after, *:before {
   box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -625,9 +634,9 @@ nav ul li {
   width: auto;
   height: 100%;
   position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateZ(0);
-  transform: translateX(-50%) translateZ(0);
+  left: 0;
+  right: 0;
+  margin: auto;
   max-height: 391px;
   top: 10px;
   max-width: unset;
@@ -691,6 +700,9 @@ nav ul li {
   width: 38px;
   height: 38px;
   border-radius: 50%;
+  behavior: url(css/PIE.htc);
+  z-index: 0;
+  position: relative;
   font-size: 12px;
   border: 1px solid #2c303d;
   color: #2c303d;
@@ -754,9 +766,9 @@ nav ul li {
   width: auto;
   height: 100%;
   position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateZ(0);
-  transform: translateX(-50%) translateZ(0);
+  left: 0;
+  right: 0;
+  margin: auto;
   max-height: 100%;
   max-width: unset;
 }
@@ -801,6 +813,7 @@ nav ul li {
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  behavior: url(css/PIE.htc);
   background: #fff;
   padding: 15px;
   margin-top: 56px;
@@ -813,6 +826,7 @@ nav ul li {
   height: 40px;
   border: 1px solid #2c87ce;
   border-radius: 50%;
+  behavior: url(css/PIE.htc);
   float: left;
   margin-right: 14px;
   margin-top: 12px;
