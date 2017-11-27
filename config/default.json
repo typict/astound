@@ -1,6 +1,5 @@
 {
-  "domain": "wp-framework.dev",
-  "theme": "wp-framework",
+
   "path": {
     "base": {
       "src":"assets/",
