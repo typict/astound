@@ -1,33 +1,10 @@
 {
-  "wp_theme_name": "wp-framework",
-  "wp_site_name": "wp-framework.dev",
-  "name": "wp-framework",
-  "version": "2017.09.12",
-  "description": "simple html and css framework. before run you need to install 'npm install -g gulp browserify babel jade stylus http-server'",
-  "homepage": "https://github.com/crazyyy/wp-framework#readme",
-  "author": {
-    "name": "Vitali Antoniuk",
-    "email": "crazyyy@gmail.com",
-    "url": "http://saitobaza.ru"
-  },
+
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/crazyyy/wp-framework.git"
-  },
-  "bugs": {
-    "url": "https://github.com/crazyyy/wp-framework/issues"
-  },
+
+
   "main": "html/index.html",
-  "keywords": [
-    "html",
-    "css",
-    "wordpress",
-    "ES5",
-    "ES6",
-    "JS",
-    "Gulp"
-  ],
+
   "browser": {},
   "scripts": {
     "start": "SET NODE_ENV=development & gulp serve",
