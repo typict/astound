@@ -1,6 +1,4 @@
 'use strict';
-/* if work with html set TRUE, else - FALSE */
-const htmlOWp = true;
 
 /* import dependencies */
 import config from 'config';
@@ -18,11 +16,7 @@ const plugins = require("gulp-load-plugins")({
   replaceString: /\bgulp[\-.]/
 });
 
-if (htmlOWp === false) {
-  config.path.base.wp = './wordpress/wp-content/themes/' + config.theme + '/';
-  ChangeBasePath(config);
-  config.path.base.dest = config.path.base.wp;
-}
+
 
 // Compile and automatically prefix stylesheets
 gulp.task('scss', function() {
@@ -140,7 +134,7 @@ gulp.task('scripts', function() {
 // Browser Sync
 gulp.task('browserSync', function() {
   let args;
-  if (htmlOWp === true) {
+ 
     args = {
       notify: false,
       port: 9080,
@@ -148,14 +142,7 @@ gulp.task('browserSync', function() {
         baseDir: config.path.base.dest,
       }
     }
-  } else {
-    args = {
-      notify: false,
-      port: 9090,
-      proxy: config.domain,
-      host: config.domain,
-    }
-  }
+ 
   browserSync(args)
 });
 
